@@ -1,0 +1,18 @@
+data_parameters:
+  raw_data_path: 'data/raw/project10.csv'
+  processed_data_path: 'data/processed/'
+  test_size: 0.2
+  random_state: 42
+  
+features:
+  text:
+    - post_title
+    - post_self_text
+    - self_text
+  metadata:
+    - post_score
+    - post_upvote_ratio
+    - post_thumbs_ups
+  temporal:
+    - post_created_time
+    - created_time
